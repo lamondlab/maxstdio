@@ -243,3 +243,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/maxstdio/dist/maxstdio-0.1-cp27-cp27m-win32.whl

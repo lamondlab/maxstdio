@@ -1,4 +1,5 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
+
 
 setup(name='maxstdio',
     version='0.1',
@@ -6,5 +7,9 @@ setup(name='maxstdio',
     author='Barry Carr',
     author_email='b.carr@dundee.ac.uk',
     ext_modules=[Extension('maxstdio', ['main.cpp'])],
-    classifiers=['Development Status :: 3 - Alpha'],
-    platforms=['win32'],)
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Programming Language :: Python :: 2.7',],
+    platforms=['win32'],
+    keywords='_setmaxstdio development windows win32 msvcrt')

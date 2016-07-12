@@ -1,0 +1,6 @@
+main.cpp
+setup.py
+maxstdio.egg-info/PKG-INFO
+maxstdio.egg-info/SOURCES.txt
+maxstdio.egg-info/dependency_links.txt
+maxstdio.egg-info/top_level.txt
