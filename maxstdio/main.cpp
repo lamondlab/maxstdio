@@ -9,7 +9,7 @@ static PyObject *setmaxstdio(PyObject *self, PyObject *args)
 
 	if (!PyArg_ParseTuple(args, "i", &newvalue))
 	{
-		return nullptr;
+		return NULL;
 	}
 
 	int result = _setmaxstdio(newvalue);
@@ -27,7 +27,7 @@ static PyObject *getmaxstdio(PyObject *self)
 static PyMethodDef MaxstdioMethods[] = {
 	{ "setmaxstdio", PyCFunction(setmaxstdio), METH_VARARGS, "Set the max number of files handles needed, up to a maximum of 2048." },
 	{ "getmaxstdio", PyCFunction(getmaxstdio), METH_VARARGS, "Gets the current number of files handles set" },
-	{ nullptr, nullptr, 0, nullptr }        /* Sentinel */
+	{ NULL, NULL, 0, NULL }        /* Sentinel */
 };
 
 PyMODINIT_FUNC initmaxstdio()
@@ -35,7 +35,7 @@ PyMODINIT_FUNC initmaxstdio()
 	PyObject *m;
 
 	m = Py_InitModule("maxstdio", MaxstdioMethods);
-	if (m == nullptr)
+	if (m == NULL)
 	{
 		return;
 	}
